@@ -18,14 +18,14 @@ while navios != 0:
         print("Escolha a posição do navio 9 casas")
         tamanho = 9
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p1[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -36,14 +36,14 @@ while navios != 0:
         print("Escolha a posição do navio 8 casas")
         tamanho = 8
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p1[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -54,14 +54,14 @@ while navios != 0:
         print("Escolha a posição do navio 5 casas")
         tamanho = 5
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p1[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -72,14 +72,14 @@ while navios != 0:
         print("Escolha a posição do navio 2 casas")
         tamanho = 2
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p1[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -101,14 +101,14 @@ while navios != 0:
         print("Escolha a posição do navio 9 casas")
         tamanho = 9
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p2[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -119,14 +119,14 @@ while navios != 0:
         print("Escolha a posição do navio 8 casas")
         tamanho = 8
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p2[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -137,14 +137,14 @@ while navios != 0:
         print("Escolha a posição do navio 5 casas")
         tamanho = 5
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p2[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
@@ -155,14 +155,14 @@ while navios != 0:
         print("Escolha a posição do navio 2 casas")
         tamanho = 2
         pos = int(input("Posição: "))
-        while pos < 0 or pos + tamanho > 65:
+        while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
             if map_p2[i] == 1:
                 print("posição ocupada, escolha outra posição")
                 pos = int(input("Posição: "))
-                while pos < 0 or pos + tamanho > 65:
+                while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1:
                     print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
                     pos = int(input("Posição: "))
                 i = pos
