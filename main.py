@@ -150,6 +150,8 @@ while num_navio != 8:
         num_navio += 1
         navio2 -= 1
 
+print(f"\n \n \n \n \n \n \n \n")
+
 fim = False
 for i in range(65):
     map_p1_atk.append(0)
@@ -168,13 +170,19 @@ while fim == False:
             for i, navio in enumerate(navios_p2):
                 if pos in navio:
                     print(f"Acertou um navio de {len(navio)} casas")
-                    for j in navio:
+                    navio_atk = sorted(navio)
+                    for j in navio_atk:
                         map_p2[j] = "X"
                         map_p2_atk[j] = "X"
+                    for l in range(len(navio_atk)):
+                        navio_atk[l] = "X"
+                    navio = navio_atk
+            print("jogador 1 de novo, ele acertou um navio")
         else:
             print("nenhum navio acertado")
             map_p2_atk[pos] = 1
-        turno = 2
+            turno = 2
+    print(f"\n \n \n \n \n \n \n \n")
     while turno == 2:
         print("turno do jogador 2 atacar")
         print("este é o campo do jogador 1")
@@ -187,10 +195,15 @@ while fim == False:
             for i, navio in enumerate(navios_p1):
                 if pos in navio:
                     print(f"Acertou um navio de {len(navio)} casas")
-                    for j in navio:
+                    navio_atk = sorted(navio)
+                    for j in navio_atk:
                         map_p1[j] = "X"
                         map_p1_atk[j] = "X"
+                    for l in range(len(navio_atk)):
+                        navio_atk[l] = "X"
+                    navio = navio_atk
+            print("jogador 2 de novo, ele acertou um navio")
         else:
             print("nenhum navio acertado")
             map_p1_atk[pos] = 1
-        turno = 1
+            turno = 1
