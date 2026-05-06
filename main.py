@@ -36,6 +36,7 @@ for i in range(65):
     map_p2.append(0)
 print("batalha naval 1d")
 while num_navio != 8:
+    print("\n")
     print(map_p1)
     print("Jogador 1 começa, escolha qual navio colocar")
     print(f"Casas ja selecionadas: {navios_p1}")
@@ -45,6 +46,8 @@ while num_navio != 8:
         tamanho = 9
         pos = int(input("Posição: "))
         while pos < 0 or pos + tamanho > 65 or map_p1[pos] == 1 or map_p1[pos + 1] == 1 or map_p1[pos + 2] == 1 or map_p1[pos + 3] == 1 or map_p1[pos + 4] == 1 or map_p1[pos + 5] == 1 or map_p1[pos + 6] == 1 or map_p1[pos + 7] == 1 or map_p1[pos + 8] == 1:
+            print("\n")
+            print(map_p1)
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
@@ -98,7 +101,7 @@ navio8 = 2
 navio5 = 3
 navio2 = 2
 while num_navio != 8:
-
+    print("\n")
     print(map_p2)
     print(f"Casas ja selecionadas: {navios_p2}")
     print("Jogador 2, escolha qual navio colocar")
@@ -108,6 +111,8 @@ while num_navio != 8:
         tamanho = 9
         pos = int(input("Posição: "))
         while pos < 0 or pos + tamanho > 65 or map_p2[pos] == 1 or map_p2[pos + 1] == 1 or map_p2[pos + 2] == 1 or map_p2[pos + 3] == 1 or map_p2[pos + 4] == 1 or map_p2[pos + 5] == 1 or map_p2[pos + 6] == 1 or map_p2[pos + 7] == 1 or map_p2[pos + 8] == 1:
+            print("\n")
+            print(map_p2)
             print("posião invalida, lembre-se que a casa escolhida é o inico do navio")
             pos = int(input("Posição: "))
         for i in range(pos, pos + tamanho):
