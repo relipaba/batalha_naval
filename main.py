@@ -2,6 +2,8 @@ map_p1 = []
 map_p2 = []
 map_p1_atk = []
 map_p2_atk = []
+contagem_fim_p1 = 0
+contagem_fim_p2 = 0
 tamanho = 0
 turno = 1
 navios_p1 = [
@@ -150,7 +152,7 @@ while num_navio != 8:
         num_navio += 1
         navio2 -= 1
 
-print(f"\n \n \n \n \n \n \n \n")
+print("\n \n \n \n \n \n \n \n")
 
 fim = False
 for i in range(65):
@@ -177,12 +179,17 @@ while fim == False:
                     for l in range(len(navio_atk)):
                         navio_atk[l] = "X"
                     navio = navio_atk
+                    contagem_fim_p1 += 1
             print("jogador 1 de novo, ele acertou um navio")
         else:
             print("nenhum navio acertado")
             map_p2_atk[pos] = 1
             turno = 2
-    print(f"\n \n \n \n \n \n \n \n")
+    if contagem_fim_p1 == 8:
+        print("Jogador 1 afundou todos os navios do jogador 2")
+        fim = True
+        continue
+    print("\n \n \n \n \n \n \n \n")
     while turno == 2:
         print("turno do jogador 2 atacar")
         print("este é o campo do jogador 1")
@@ -202,8 +209,12 @@ while fim == False:
                     for l in range(len(navio_atk)):
                         navio_atk[l] = "X"
                     navio = navio_atk
+                    contagem_fim_p2 += 1
             print("jogador 2 de novo, ele acertou um navio")
         else:
             print("nenhum navio acertado")
             map_p1_atk[pos] = 1
             turno = 1
+    if contagem_fim_p2 == 8:
+        print("Jogador 2 afundou todos os navios do jogador 1")
+        fim = True
