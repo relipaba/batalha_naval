@@ -166,9 +166,6 @@ for i in range(65):
 
 while fim == False:
     while turno == 1:
-        if contagem_fim_p2 == 8:
-            print("Jogador 2 afundou todos os navios do jogador 1")
-            fim = True
         if contagem_fim_p1 == 8:
             print("Jogador 1 afundou todos os navios do jogador 2")
             fim = True
@@ -199,6 +196,9 @@ while fim == False:
             turno = 2
     print("\n \n \n \n \n \n \n \n")
     while turno == 2:
+        if contagem_fim_p2 == 8:
+            print("Jogador 2 afundou todos os navios do jogador 1")
+            fim = True
         print("turno do jogador 2 atacar")
         print("este é o campo do jogador 1")
         print(map_p1_atk)
