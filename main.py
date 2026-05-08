@@ -166,6 +166,13 @@ for i in range(65):
 
 while fim == False:
     while turno == 1:
+        if contagem_fim_p2 == 8:
+            print("Jogador 2 afundou todos os navios do jogador 1")
+            fim = True
+        if contagem_fim_p1 == 8:
+            print("Jogador 1 afundou todos os navios do jogador 2")
+            fim = True
+            continue
         print("turno do jogador 1 atacar")
         print("este é o campo do jogador 2")
         print(map_p2_atk)
@@ -190,10 +197,6 @@ while fim == False:
             print("nenhum navio acertado")
             map_p2_atk[pos] = 1
             turno = 2
-    if contagem_fim_p1 == 8:
-        print("Jogador 1 afundou todos os navios do jogador 2")
-        fim = True
-        continue
     print("\n \n \n \n \n \n \n \n")
     while turno == 2:
         print("turno do jogador 2 atacar")
